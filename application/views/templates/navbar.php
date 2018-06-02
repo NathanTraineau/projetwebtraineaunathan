@@ -54,7 +54,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-                <a class="nav-link" href="<?php echo base_url() ?>sport/sportTrainings">
+                <a class="nav-link" href="<?php echo base_url() ?>sport/formNewSportTraining">
                     <i class="fa fa-fw fa-hand-rock-o"></i>
                     <span class="nav-link-text">Sport Trainings</span>
                 </a>

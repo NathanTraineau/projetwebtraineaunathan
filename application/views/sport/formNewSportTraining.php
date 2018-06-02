@@ -20,7 +20,7 @@
 
                         <div class="col-md-6">
                             <label >Description Training</label>
-                            <textarea type="Text1"  class="embed-responsive-item "name="descriptionTraining" rows="5" ></textarea><?php echo set_value('descriptionTraining'); ?> </textarea>
+                            <textarea type="Text1"  class="embed-responsive-item "name="descriptionTraining" rows="5" required ></textarea><?php echo set_value('descriptionTraining'); ?> </textarea>
 
                         </div>
                         <br>

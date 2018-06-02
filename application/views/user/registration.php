@@ -21,11 +21,11 @@ valid the inscription, then return to login where the user can login
             <div class="form-row">
               <div class="col-md-6">
                 <label for="exampleInputName">First name</label>
-                <input class="form-control" name="firstname" type="text" aria-describedby="nameHelp" placeholder="Enter first name">
+                <input class="form-control" name="firstname" type="text" aria-describedby="nameHelp" placeholder="Enter first name" required>
               </div>
               <div class="col-md-6">
                 <label for="exampleInputLastName">Last name</label>
-                <input class="form-control" name="lastname" type="text" aria-describedby="nameHelp" placeholder="Enter last name">
+                <input class="form-control" name="lastname" type="text" aria-describedby="nameHelp" placeholder="Enter last name" required>
               </div>
               <div class="col-md-6">
                 <label for="exampleInputLastName">Username</label>
