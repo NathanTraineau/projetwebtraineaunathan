@@ -1,0 +1,128 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Events Calendar Widget Flat Responsive Widget Template :: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Events Calendar Widget Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<!-- calendar -->
+	<link rel="stylesheet" href="css/monthly.css">
+	<!-- //calendar -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href='//fonts.googleapis.com/css?family=Josefin+Sans:400,100,100italic,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="main">
+		<h1>Events Calendar Widget</h1>
+	<!-- calendar -->
+				<div class="w3layouts-top">
+					<div class="agile-calendar-grid">
+						<div class="page">
+							
+							<div class="w3l-calendar-left">
+								<div class="calendar-heading">
+									
+								</div>
+								<div class="monthly" id="mycalendar"></div>
+							</div>
+							
+							<div class="clear"> </div>
+						</div>
+					</div>
+					<div class="w3agile-clock">
+						<div class="w3ls-wrapper">
+							<div class="clock" id="clock"></div>
+							<div class="dmy">
+								<div class="date">
+									<!-- Date-JavaScript -->
+									<script type="text/javascript">
+									var mydate=new Date()
+									var year=mydate.getYear()
+									if(year<1000)
+									year+=1900
+									var day=mydate.getDay()
+									var month=mydate.getMonth()
+									var daym=mydate.getDate()
+									if(daym<10)
+									daym="0"+daym
+									var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+									var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+									document.write(""+daym+", "+year+"<br>"+dayarray[day]+","+montharray[month]+" ")
+									</script>
+									<!-- //Date-JavaScript -->
+								</div>
+							</div>
+
+						</div> 
+					</div>
+					<div class="clear"> </div>
+				</div>
+				<!-- //calendar -->
+
+		<div class="copyright">
+			<p>© 2017 Events Calendar Widget. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+		</div>
+	</div>
+	<!-- calendar -->
+	<script type="text/javascript" src="js/monthly.js"></script>
+	<script type="text/javascript">
+		$(window).load( function() {
+
+			$('#mycalendar').monthly({
+				mode: 'event',
+				
+			});
+
+			$('#mycalendar2').monthly({
+				mode: 'picker',
+				target: '#mytarget',
+				setWidth: '250px',
+				startHidden: true,
+				showTrigger: '#mytarget',
+				stylePast: true,
+				disablePast: true
+			});
+
+		switch(window.location.protocol) {
+		case 'http:':
+		case 'https:':
+		// running on a server, should be good.
+		break;
+		case 'file:':
+		alert('Just a heads-up, events will not work when run locally.');
+		}
+
+		});
+	</script>
+	<!-- //calendar -->
+<!-- clock js -->
+	<script type="text/javascript" src="js/clock-1.1.0.js"></script>
+	<script> 
+		var clock = $("#clock").clock(),
+			data = clock.data('clock');
+
+		// data.pause();
+		// data.start();
+		// data.setTime(new Date());
+
+		var d = new Date();
+		d.setHours(9);
+		d.setMinutes(51);
+		d.setSeconds(20);
+	</script>
+	<!-- //clock js -->
+
+</body>
+</html>
