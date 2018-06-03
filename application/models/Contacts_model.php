@@ -78,7 +78,7 @@ class Contacts_model extends CI_Model
     //return the users we are not in contact with
 
         return  $this->db->select('*')
-            ->from($this->contacts)
+            ->from($this->users)
             ->get()
             ->result();
 
