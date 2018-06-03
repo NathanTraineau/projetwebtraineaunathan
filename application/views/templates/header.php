@@ -11,7 +11,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="site web d'organisation">
     <meta name="author" content="nathan Traineau">
-    <title>SB Admin - Start Bootstrap Template</title>
+    <title>PlanUrLife</title>
     <!-- Bootstrap core CSS-->
     <link href="<?php echo base_url() ?>bootstrap/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts for this template-->

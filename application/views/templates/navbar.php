@@ -12,7 +12,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="site web d'organisation">
     <meta name="author" content="nathan Traineau">
-    <title>SB Admin - Start Bootstrap Template</title>
+    <title>PlanUrLife</title>
     <!-- Bootstrap core CSS-->
     <link href="<?php echo base_url() ?>bootstrap/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts for this template-->
@@ -54,7 +54,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-                <a class="nav-link" href="<?php echo base_url() ?>sport/formNewSportTraining">
+                <a class="nav-link" href="<?php echo base_url() ?>sport/sportTrainings">
                     <i class="fa fa-fw fa-hand-rock-o"></i>
                     <span class="nav-link-text">Sport Trainings</span>
                 </a>

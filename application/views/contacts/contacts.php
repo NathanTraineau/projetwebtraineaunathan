@@ -19,7 +19,7 @@
         <?php
 
         foreach ( $nbContacts as $nb ) {
-            echo "You have $nb contacts";
+            echo "You have $nb->nbContact contacts";
         }
         ?> </th><?php
 
