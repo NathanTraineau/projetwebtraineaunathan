@@ -21,8 +21,7 @@
         {
         $pass = true;
         foreach ($contacts as $contact) {
-
-        if ($contact->idUser1 == $userUsername) {
+            if ($user->username == $userUsername || $contact->idUser1 == $user->username || $contact->idUser2 == $user->username) {
                 $pass = false;
             }
         }

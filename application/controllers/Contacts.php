@@ -59,7 +59,7 @@ class Contacts extends CI_Controller
 
         }
         else {
-            $userUsername=$this->encryption->decrypt(get_cookie('username'));
+            $userUsername = $this->encryption->decrypt(get_cookie('username'));
             $data = array('users' => $this->Contacts_model->getAllUsers(),
                 'userUsername' => $userUsername ,
                 'contacts' => $this->Contacts_model->getAllContacts($userUsername),

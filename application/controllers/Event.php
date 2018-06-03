@@ -105,8 +105,8 @@ class Event extends CI_Controller
                 'rules' => '',
             ),
             array(
-                'field' => 'idTraining',
-                'label' => 'idTraining Event',
+                'field' => 'nameTraining',
+                'label' => 'nameTraining Event',
                 'rules' => '',
             ),
 

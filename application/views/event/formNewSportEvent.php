@@ -32,7 +32,7 @@
 
                             <div class="col-md-6">
                                 <label for="exampleInputName">Training</label>
-                                <select class="form-control" name="nameTraining" form="formEvent">
+                                <select class="form-control" name="nameTraining" form="formEvent" required>
                                     <?php
                                     foreach ($trainings as $training) {
                                         echo "<option value = $training->nameTraining>$training->nameTraining  </option>";
