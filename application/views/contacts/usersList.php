@@ -22,7 +22,8 @@
         $pass = true;
         $username = "$user->username";
         foreach ($contacts as $contact) {
-            if ( ($contact->idUser1 == $username ) or ($contact->idUser2 == $username)) {
+
+        if ($contact->idUser1 == $userUsername) {
                 $pass = false;
             }
         }
