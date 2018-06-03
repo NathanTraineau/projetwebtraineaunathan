@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f1f130c-40d6-4e58-b182-f6b6bb507629" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/application/controllers/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Event.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/contacts/usersList.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/contacts/usersList.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/event/myEvents.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/event/myEvents.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,8 +19,8 @@
       <file leaf-file-name="usersList.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/contacts/usersList.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="44" column="4" lean-forward="true" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
+            <state relative-caret-position="391">
+              <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -341,12 +338,12 @@
       <workItem from="1527506797120" duration="101909000" />
       <workItem from="1527871634193" duration="48755000" />
       <workItem from="1527982424814" duration="3585000" />
-      <workItem from="1528035241984" duration="2606000" />
+      <workItem from="1528035241984" duration="2743000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163361000" />
+    <option name="totallyTimeSpent" value="163498000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1096" extended-state="6" />
@@ -679,8 +676,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/contacts/usersList.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" column="4" lean-forward="true" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
+        <state relative-caret-position="391">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
         </state>
       </provider>
     </entry>

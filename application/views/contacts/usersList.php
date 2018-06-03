@@ -21,7 +21,7 @@
         {
         $pass = true;
         foreach ($contacts as $contact) {
-            if ($user->username == $userUsername or $contact->idUser1 == $user->username or $contact->idUser2 == $user->username) {
+            if ( $contact->idUser1 == $user->username or $contact->idUser2 == $user->username) {
                 $pass = false;
             }
         }
@@ -42,7 +42,7 @@
     </tr>
     <?php }
     }
-    
+
     ?>
 
 </table>
