@@ -5,6 +5,8 @@ class Contacts_model extends CI_Model
 
     protected $users = 'user';
     protected $contacts = 'contacts';
+    protected $nbcontacts = 'nbcontacts';
+
 
     public function __construct()
     {
@@ -61,11 +63,23 @@ class Contacts_model extends CI_Model
 
     }
 
+    public function getNbContact($userUsername){
+        //return the users we are not in contact with
+
+        return  $this->db->select('*')
+            ->from($this->nbcontacts)
+            ->where('user',$userUsername)
+            ->get()
+            ->result();
+
+    }
+
     public function getAllUsers($userUsername){
     //return the users we are not in contact with
 
         return  $this->db->select('*')
-            ->from($this->users)
+            ->from($this->contacts)
+            ->where("")
             ->get()
             ->result();
 

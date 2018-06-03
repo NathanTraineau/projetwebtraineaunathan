@@ -21,8 +21,9 @@ class Dashboard extends CI_Controller
         }
         else {
 
-            $cookie_decry=$this->encryption->decrypt(get_cookie('username'));
-            $data['events']= $this->Event_model->getSportEvents($cookie_decry);
+            $userUsername=$this->encryption->decrypt(get_cookie('username'));
+            $data['events']= $this->Event_model->getSportEvents($userUsername);
+            $data['userUsername'] = $userUsername;
             $this->load->view('templates/navbar');
             $this->load->view('event/myEvents',$data);
             $this->load->view('templates/footer');

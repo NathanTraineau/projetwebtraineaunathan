@@ -10,12 +10,18 @@
 
         <th scope="col">Username</th>
 
+
     </tr>
     </thead>
     <tbody>
     <tr>
+        <th>
         <?php
 
+        foreach ( $nbContacts as $nb ) {
+            echo "You have $nb contacts";
+        }
+        ?> </th><?php
 
         foreach ( $contacts as $contact )
         {
