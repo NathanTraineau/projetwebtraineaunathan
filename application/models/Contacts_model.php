@@ -63,7 +63,7 @@ class Contacts_model extends CI_Model
 
     }
 
-    public function getNbContact($userUsername){
+    public function getNbContacts($userUsername){
         //return the users we are not in contact with
 
         return  $this->db->select('*')
