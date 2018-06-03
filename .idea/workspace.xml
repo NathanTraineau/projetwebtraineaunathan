@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f1f130c-40d6-4e58-b182-f6b6bb507629" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/application/controllers/Contacts.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Contacts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Event.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/contacts/usersList.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/contacts/usersList.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/event/formNewSportEvent.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/event/formNewSportEvent.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,8 +64,8 @@
       <file leaf-file-name="usersList.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/contacts/usersList.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="629">
+              <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -163,10 +160,10 @@
         <option value="$PROJECT_DIR$/application/models/Contacts_model.php" />
         <option value="$PROJECT_DIR$/application/controllers/User.php" />
         <option value="$PROJECT_DIR$/application/views/event/myEvents.php" />
-        <option value="$PROJECT_DIR$/application/views/contacts/usersList.php" />
         <option value="$PROJECT_DIR$/application/controllers/Contacts.php" />
         <option value="$PROJECT_DIR$/application/controllers/Event.php" />
         <option value="$PROJECT_DIR$/application/views/event/formNewSportEvent.php" />
+        <option value="$PROJECT_DIR$/application/views/contacts/usersList.php" />
       </list>
     </option>
   </component>
@@ -346,12 +343,12 @@
       <workItem from="1527506797120" duration="101909000" />
       <workItem from="1527871634193" duration="48755000" />
       <workItem from="1527982424814" duration="3585000" />
-      <workItem from="1528035241984" duration="4445000" />
+      <workItem from="1528035241984" duration="4562000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165200000" />
+    <option name="totallyTimeSpent" value="165317000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1096" extended-state="6" />
@@ -684,8 +681,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/contacts/usersList.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="629">
+          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
         </state>
       </provider>
     </entry>
