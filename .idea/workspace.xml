@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f1f130c-40d6-4e58-b182-f6b6bb507629" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/application/controllers/Contacts.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Contacts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models/Contacts_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Contacts_model.php" afterDir="false" />
-    </list>
+    <list default="true" id="9f1f130c-40d6-4e58-b182-f6b6bb507629" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,8 +98,8 @@
       <file leaf-file-name="Contacts.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Contacts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="62" column="72" selection-start-line="62" selection-start-column="72" selection-end-line="62" selection-end-column="72" />
+            <state relative-caret-position="425">
+              <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -343,12 +340,12 @@
       <workItem from="1527506797120" duration="101909000" />
       <workItem from="1527871634193" duration="48755000" />
       <workItem from="1527982424814" duration="3585000" />
-      <workItem from="1528035241984" duration="1573000" />
+      <workItem from="1528035241984" duration="1716000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162328000" />
+    <option name="totallyTimeSpent" value="162471000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1096" extended-state="6" />
@@ -681,8 +678,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Contacts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="62" column="72" selection-start-line="62" selection-start-column="72" selection-end-line="62" selection-end-column="72" />
+        <state relative-caret-position="425">
+          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
         </state>
       </provider>
     </entry>
