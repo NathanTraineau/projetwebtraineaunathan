@@ -20,7 +20,7 @@ class Contacts extends CI_Controller
             $data = array(
                 'userUsername' => $userUsername ,
                 'contacts' => $this->Contacts_model->getAllContacts($userUsername),
-                'nbcontacts' => $this->Contacts_model->getNbContacts($userUsername)
+                'nbContacts' => $this->Contacts_model->getNbContacts($userUsername)
             );
             $this->load->view('templates/navbar');
             $this->load->view('contacts/contacts', $data);
@@ -61,7 +61,7 @@ class Contacts extends CI_Controller
         else {
             $userUsername=$this->encryption->decrypt(get_cookie('username'));
             $data = array('users' => $this->Contacts_model->getAllUsers(),
-                'username' => $userUsername ,
+                'userUsername' => $userUsername ,
                 'contacts' => $this->Contacts_model->getAllContacts($userUsername),
 
             );
