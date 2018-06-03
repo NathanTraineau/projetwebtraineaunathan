@@ -20,7 +20,7 @@
         foreach ( $users as $user )
         {
         $pass = true;
-        $username = $user->username;
+        $username = "$user->username";
         foreach ($contacts as $contact) {
             if ( ($contact->idUser1 == $username ) or ($contact->idUser2 == $username)) {
                 $pass = false;
