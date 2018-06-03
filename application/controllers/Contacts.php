@@ -20,6 +20,7 @@ class Contacts extends CI_Controller
             $data = array(
                 'userUsername' => $userUsername ,
                 'contacts' => $this->Contacts_model->getAllContacts($userUsername),
+                'nbcontacts' => $this->Contacts_model->getNbContacts($userUsername)
             );
             $this->load->view('templates/navbar');
             $this->load->view('contacts/contacts', $data);

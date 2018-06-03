@@ -15,8 +15,9 @@ class Event extends CI_Controller
 
         } else {
 
-            $username = $this->encryption->decrypt(get_cookie('username'));
+            $userUsername = $this->encryption->decrypt(get_cookie('username'));
             $data['events'] = $this->Event_model->getSportEvents();
+            $data['userUsername'] = $userUsername;
             $this->load->view('templates/navbar');
             $this->load->view('event/myEvents', $data);
             $this->load->view('templates/footer');

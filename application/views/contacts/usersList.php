@@ -1,6 +1,4 @@
 
-
-// View for the user list, when the user wants to see the
 <br>
 <br>
 
@@ -12,9 +10,6 @@
     <tr>
 
         <th scope="col">Username</th>
-        <th scope="col">First Name</th>
-        <th scope="col">Last Name</th>
-        <th scope="col">Phone Number</th>
     </tr>
     </thead>
     <tbody>
@@ -24,14 +19,18 @@
 
         foreach ( $users as $user )
         {
-        if ($user->username != $username){
+        $pass = true;
+        foreach ($contacts as $contact)
+        {
+        if ($user->username == $username or $contact->idUser1 == $user->username or $contact->idUser2 == $user->username) {
+            $pass = false;
+        }
+        if ($pass){
         ?>
 
         <th scope="row">
             <?php echo "$user->username" ?> </th>
-        <td><?php echo " $user->firstname" ?></td>
-        <td> <?php echo " $user->lastname" ?></td>
-        <td> <?php echo " $user->phoneNumber" ?></td>
+
         <td>
             <form action="<?php echo site_url("contacts/addContact") ?>" method="post">
                 <p>
@@ -42,6 +41,7 @@
         </td>
     </tr>
     <?php }
+    }
     }
     ?>
 
