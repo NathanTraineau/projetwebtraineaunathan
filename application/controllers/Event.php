@@ -124,7 +124,7 @@ class Event extends CI_Controller
                 "placeEvent" => htmlspecialchars($_POST['placeEvent']),
                 "dateEvent" => htmlspecialchars($_POST['dateEvent']),
                 "descriptionEvent" => htmlspecialchars($_POST['descriptionEvent']),
-                "nameTraining" => htmlspecialchars($_POST['nameTraining'])
+                "nameTraining" => htmlspecialchars($_POST['nameTraining']),
             );
 
             $this->Event_model->newSportEvent($data);
