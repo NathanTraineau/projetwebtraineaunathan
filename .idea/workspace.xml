@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f1f130c-40d6-4e58-b182-f6b6bb507629" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/application/views/contacts/contacts.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/contacts/contacts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/templates/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/templates/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/sport/sportTraining.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/sport/sportTraining.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sportTraining.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sportTraining.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/sport/sportTraining.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+            <state relative-caret-position="697">
+              <caret line="41" column="102" selection-start-line="41" selection-start-column="102" selection-end-line="41" selection-end-column="102" />
             </state>
           </provider>
         </entry>
@@ -80,7 +79,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navbar.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="navbar.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/templates/navbar.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="697">
@@ -144,7 +143,6 @@
         <option value="$PROJECT_DIR$/application/views/sport/formSportTraining.php" />
         <option value="$PROJECT_DIR$/application/views/user/myProfil.php" />
         <option value="$PROJECT_DIR$/application/views/event/formSportEvent.php" />
-        <option value="$PROJECT_DIR$/application/views/sport/sportTraining.php" />
         <option value="$PROJECT_DIR$/application/views/contacts/contactInfos.php" />
         <option value="$PROJECT_DIR$/application/views/event/addContactParticipate.php" />
         <option value="$PROJECT_DIR$/application/controllers/Sport.php" />
@@ -165,6 +163,7 @@
         <option value="$PROJECT_DIR$/application/views/templates/header.php" />
         <option value="$PROJECT_DIR$/application/views/contacts/contacts.php" />
         <option value="$PROJECT_DIR$/application/views/templates/navbar.php" />
+        <option value="$PROJECT_DIR$/application/views/sport/sportTraining.php" />
       </list>
     </option>
   </component>
@@ -337,12 +336,12 @@
       <workItem from="1527506797120" duration="101909000" />
       <workItem from="1527871634193" duration="48755000" />
       <workItem from="1527982424814" duration="3585000" />
-      <workItem from="1528035241984" duration="6752000" />
+      <workItem from="1528035241984" duration="7360000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167507000" />
+    <option name="totallyTimeSpent" value="168115000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1096" extended-state="6" />
@@ -631,13 +630,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/sport/sportTraining.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/contacts/contacts.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -677,6 +669,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
           <caret line="56" column="86" selection-start-line="56" selection-start-column="86" selection-end-line="56" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/sport/sportTraining.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="102" selection-start-line="41" selection-start-column="102" selection-end-line="41" selection-end-column="102" />
         </state>
       </provider>
     </entry>

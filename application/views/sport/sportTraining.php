@@ -39,6 +39,6 @@
         </tbody>
     </table>
     <div class="text-center">
-        <a class="btn btn-primary btn-success btn-block md-8" href="<?php echo site_url("sport/formSportTraining")?>">Create a Training</a>
+        <a class="btn btn-primary btn-success btn-block md-8" href="<?php echo site_url("sport/formNewSportTraining")?>">Create a Training</a>
     </div>
 
