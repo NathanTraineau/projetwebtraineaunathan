@@ -19,7 +19,13 @@
 
         foreach ( $users as $user )
         {
-
+        $pass = true;
+        foreach ($contacts as $contact) {
+            if ($user->username == $userUsername || $contact->idUser1 == $user->username || $contact->idUser2 == $user->username) {
+                $pass = false;
+            }
+        }
+        if ($pass){
         ?>
 
         <th scope="row">
@@ -34,7 +40,7 @@
             </form>
         </td>
     </tr>
-    <?php
+    <?php }
     }
 
     ?>
