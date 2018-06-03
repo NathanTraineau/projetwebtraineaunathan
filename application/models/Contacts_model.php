@@ -74,12 +74,11 @@ class Contacts_model extends CI_Model
 
     }
 
-    public function getAllUsers($userUsername){
+    public function getAllUsers(){
     //return the users we are not in contact with
 
         return  $this->db->select('*')
             ->from($this->contacts)
-            ->where("")
             ->get()
             ->result();
 
