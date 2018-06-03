@@ -1,0 +1,148 @@
+/*
+File name: C:\Users\Nathan\Desktop\nathan.sql
+Creation date: 06/02/2018
+Created by MySQL to PostgreSQL 3.3 [Demo]
+--------------------------------------------------
+More conversion tools at http://www.convert-in.com
+*/
+
+/*
+Table structure for table 'public.contacts'
+*/
+
+DROP TABLE IF EXISTS "public"."contacts" CASCADE;
+CREATE TABLE "public"."contacts" (
+	"idUser1" VARCHAR(255)  NOT NULL,
+	"idUser2" VARCHAR(255)  NOT NULL,
+	"dateContact" DATE
+) WITH OIDS;
+DROP INDEX IF EXISTS "PRIMARY";
+ALTER TABLE "public"."contacts" ADD CONSTRAINT "PRIMARY" PRIMARY KEY("idUser1", "idUser2");
+DROP INDEX IF EXISTS "idUser2";
+CREATE INDEX "idUser2" ON "public"."contacts"("idUser2");
+
+/*
+Dumping data for table 'public.contacts'
+*/
+
+INSERT INTO "public"."contacts"("idUser1", "idUser2", "dateContact") VALUES ('a', 'mp', NULL);
+INSERT INTO "public"."contacts"("idUser1", "idUser2", "dateContact") VALUES ('a', 'wq', NULL);
+INSERT INTO "public"."contacts"("idUser1", "idUser2", "dateContact") VALUES ('bg', 'mp', NULL);
+INSERT INTO "public"."contacts"("idUser1", "idUser2", "dateContact") VALUES ('e', 'a', NULL);
+INSERT INTO "public"."contacts"("idUser1", "idUser2", "dateContact") VALUES ('t', 'u', NULL);
+INSERT INTO "public"."contacts"("idUser1", "idUser2", "dateContact") VALUES ('tr', 'tr', NULL);
+INSERT INTO "public"."contacts"("idUser1", "idUser2", "dateContact") VALUES ('tr', 'u', NULL);
+
+/*
+Table structure for table 'public.nbcontacts'
+*/
+
+DROP TABLE IF EXISTS "public"."nbcontacts" CASCADE;
+CREATE TABLE "public"."nbcontacts" (
+	"user" VARCHAR(255)  NOT NULL,
+	"nbContact" INTEGER NOT NULL
+) WITH OIDS;
+DROP INDEX IF EXISTS "PRIMARY";
+ALTER TABLE "public"."nbcontacts" ADD CONSTRAINT "PRIMARY" PRIMARY KEY("user");
+
+/*
+Dumping data for table 'public.nbcontacts'
+*/
+
+
+/*
+Table structure for table 'public.participate'
+*/
+
+DROP TABLE IF EXISTS "public"."participate" CASCADE;
+CREATE TABLE "public"."participate" (
+	"idEvent" INTEGER NOT NULL,
+	"idUserEvent" VARCHAR(255)  NOT NULL
+) WITH OIDS;
+DROP INDEX IF EXISTS "PRIMARY";
+ALTER TABLE "public"."participate" ADD CONSTRAINT "PRIMARY" PRIMARY KEY("idEvent", "idUserEvent");
+DROP INDEX IF EXISTS "idUserEvent";
+CREATE INDEX "idUserEvent" ON "public"."participate"("idUserEvent");
+DROP INDEX IF EXISTS "idEvent";
+CREATE INDEX "idEvent" ON "public"."participate"("idEvent");
+
+/*
+Dumping data for table 'public.participate'
+*/
+
+
+/*
+Table structure for table 'public.sportevents'
+*/
+
+DROP TABLE IF EXISTS "public"."sportevents" CASCADE;
+CREATE TABLE "public"."sportevents" (
+	"idEvent" SERIAL NOT NULL,
+	"nameEvent" VARCHAR(255)  NOT NULL,
+	"placeEvent" VARCHAR(255)  NOT NULL,
+	"dateEvent" TIMESTAMP,
+	"descriptionEvent" TEXT,
+	"nameTraining" VARCHAR(255) 
+) WITH OIDS;
+DROP INDEX IF EXISTS "PRIMARY";
+ALTER TABLE "public"."sportevents" ADD CONSTRAINT "PRIMARY" PRIMARY KEY("idEvent");
+DROP INDEX IF EXISTS "idTraining";
+CREATE INDEX "idTraining" ON "public"."sportevents"("nameTraining");
+
+/*
+Dumping data for table 'public.sportevents'
+*/
+
+INSERT INTO "public"."sportevents"("idEvent", "nameEvent", "placeEvent", "dateEvent", "descriptionEvent", "nameTraining") VALUES (30, 'ede', 'dqssdq', '2018-06-09 05:52:00', ' ze', 'spart');
+
+/*
+Table structure for table 'public.trainings'
+*/
+
+DROP TABLE IF EXISTS "public"."trainings" CASCADE;
+CREATE TABLE "public"."trainings" (
+	"nameTraining" VARCHAR(255)  NOT NULL,
+	"descriptionTraining" TEXT NOT NULL
+) WITH OIDS;
+DROP INDEX IF EXISTS "PRIMARY";
+ALTER TABLE "public"."trainings" ADD CONSTRAINT "PRIMARY" PRIMARY KEY("nameTraining");
+
+/*
+Dumping data for table 'public.trainings'
+*/
+
+INSERT INTO "public"."trainings"("nameTraining", "descriptionTraining") VALUES ('spart', 'le plus dur');
+
+/*
+Table structure for table 'public.user'
+*/
+
+DROP TABLE IF EXISTS "public"."user" CASCADE;
+CREATE TABLE "public"."user" (
+	"username" VARCHAR(20)  NOT NULL,
+	"firstname" VARCHAR(255)  NOT NULL,
+	"lastname" VARCHAR(255)  NOT NULL,
+	"password" VARCHAR(255)  NOT NULL,
+	"fbpseudo" VARCHAR(30) ,
+	"phoneNumber" INTEGER NOT NULL
+) WITH OIDS;
+DROP INDEX IF EXISTS "PRIMARY";
+ALTER TABLE "public"."user" ADD CONSTRAINT "PRIMARY" PRIMARY KEY("username");
+
+/*
+Dumping data for table 'public.user'
+*/
+
+INSERT INTO "public"."user"("username", "firstname", "lastname", "password", "fbpseudo", "phoneNumber") VALUES ('a', 'a', 'a', 'f26c1c62117d3728693c93990023980c', '', 0);
+INSERT INTO "public"."user"("username", "firstname", "lastname", "password", "fbpseudo", "phoneNumber") VALUES ('bg', 'bg', 'bg', '$2y$10$dS9dfNV2O3dBx9bio667/uQSh', '', 0);
+INSERT INTO "public"."user"("username", "firstname", "lastname", "password", "fbpseudo", "phoneNumber") VALUES ('cd', 'cd', 'cd', '$2y$10$iPVyrpLYwo9XhBgfmjo/5elYe', '', 0);
+INSERT INTO "public"."user"("username", "firstname", "lastname", "password", "fbpseudo", "phoneNumber") VALUES ('ds', 'ds', 'ds', '$2y$10$PgX2eAmn5RGIvpmMnz2SP.RlKLwbjC.SXG.vxqqGjPZJ05ayWahk6', '', 0);
+INSERT INTO "public"."user"("username", "firstname", "lastname", "password", "fbpseudo", "phoneNumber") VALUES ('e', 'e', 'e', 'dd93baa878aa844fec0090ab5abf48c7', '', 0);
+INSERT INTO "public"."user"("username", "firstname", "lastname", "password", "fbpseudo", "phoneNumber") VALUES ('hy', 'hy', 'hy', '$2y$10$U71fWJCD/QQH9vV5UpjVl.cB8', '', 0);
+INSERT INTO "public"."user"("username", "firstname", "lastname", "password", "fbpseudo", "phoneNumber") VALUES ('mp', 'mp', 'mp', '$2y$10$5CpM5WNYRwuXbFcFhFkW2eKvn3j4BdaQpJM5U0k.CckZwJIGneV4C', '', 0);
+INSERT INTO "public"."user"("username", "firstname", "lastname", "password", "fbpseudo", "phoneNumber") VALUES ('po', 'tr', 'po', '$2y$10$ej/W0bqNbhYwfxtBgXo28eLtK4O5XyVPUFCh82lm8i7iR0vZsT/da', '', 0);
+INSERT INTO "public"."user"("username", "firstname", "lastname", "password", "fbpseudo", "phoneNumber") VALUES ('t', 't', 't', '6e0103f11f2b3aa4f93284a65b785ac5', '', 0);
+INSERT INTO "public"."user"("username", "firstname", "lastname", "password", "fbpseudo", "phoneNumber") VALUES ('tr', 'tr', 'tr', 'fd09b05381aba8955ae701141d687bdd', '', 0);
+INSERT INTO "public"."user"("username", "firstname", "lastname", "password", "fbpseudo", "phoneNumber") VALUES ('u', 'u', 'u', '540085c5b96a729e36618cdb8eee9442', '', 0);
+INSERT INTO "public"."user"("username", "firstname", "lastname", "password", "fbpseudo", "phoneNumber") VALUES ('vf', 'vf', 'vf', '$2y$10$CKLSTbbywDK7YG.hFMFageJROVjnzmn/1ANDKecuf4NbWaoz3AWRS', '', 0);
+INSERT INTO "public"."user"("username", "firstname", "lastname", "password", "fbpseudo", "phoneNumber") VALUES ('wq', 'wq', 'wq', '$2y$10$GdVUtbApZcOfvTTqzFhINeHWs', '', 0);
