@@ -26,7 +26,6 @@
             <td> <?php  echo " $event->descriptionEvent " ?></td>
 
             <td> <?php echo " $event->nameTraining " ?></td>
-                if
             <td>
                 <form method="post" accept-charset="utf-8" action="<?php echo site_url("event/deleteSportEvent")?>">
                     <input id="prodId" name="idEvent" type="hidden" value="<?php echo "$event->idEvent " ?>">

@@ -37,7 +37,6 @@ class User extends CI_Controller {
 
             $userUsername=$this->encryption->decrypt(get_cookie('username'));
             $data['infosUser']= $this->User_model->getInfosUser($userUsername);
-            userUsername
             $this->load->view('templates/navbar');
             $this->load->view('user/myProfil',$data);
             $this->load->view('templates/footer');
