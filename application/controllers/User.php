@@ -151,7 +151,7 @@ class User extends CI_Controller {
                         'username_callable',
                         function()
                         {
-                                return htmlspecialchars($_POST['username']) == "nathoune"
+                                return htmlspecialchars($_POST['username']) == "nathoune" ;
                         }
                 )
         )
