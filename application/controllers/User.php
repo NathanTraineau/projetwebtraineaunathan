@@ -150,7 +150,7 @@ class User extends CI_Controller {
                 )
         )
 );
-           $this->form_validation->set_message('username_callable', 'Ma grosse bite, répond à l enigme');
+           $this->form_validation->set_message('username_callable', 'Ma grosse bite,'+ htmlspecialchars($_POST['username']) + ' répond à l enigme');
 
  			if ($this->form_validation->run() == FALSE)
                 {
