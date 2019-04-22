@@ -151,7 +151,7 @@ class User extends CI_Controller {
         )
 );
         $msg = htmlspecialchars($_POST['username']);
-           $this->form_validation->set_message('username_callable', 'Ma grosse bite ce serait aussi simple. Il y a une enigme, \n Username :" Le surnom de celui qui aurait du être respo com" \n mdp :" le copié collé de son commentaire rageux qui est resté dans les anales');
+           $this->form_validation->set_message('username_callable', 'Ma grosse bite ce serait aussi simple. Il y a une enigme, Username :" Le surnom de celui qui aurait du être respo com", mdp :" le copié collé de son plus famous commentaire rageux sous une publi de polyzbeul');
 
  			if ($this->form_validation->run() == FALSE)
                 {
