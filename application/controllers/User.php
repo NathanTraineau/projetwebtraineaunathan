@@ -145,8 +145,11 @@ class User extends CI_Controller {
                 }
                 else
                 {
-
-                    $password= password_hash ( $_POST['password'] , PASSWORD_DEFAULT) ;
+                   
+                      $this->data['message'] = 'Ma grosse bite, répond à l enigme';
+                      $this->registration();
+                               
+                   /* $password= password_hash ( $_POST['password'] , PASSWORD_DEFAULT) ;
                        $data=array(
                         "username" => htmlspecialchars($_POST['username']),
                         "firstname"=> htmlspecialchars($_POST['firstname']),
@@ -160,6 +163,7 @@ class User extends CI_Controller {
                     $this->load->view('templates/header');
                     $this->load->view('user/login');
                     $this->load->view('templates/footer');
+                    */
     }
 
 
