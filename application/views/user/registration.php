@@ -11,7 +11,7 @@ valid the inscription, then return to login where the user can login
     
 <?php echo validation_errors(); ?>
 </div>
-<div id="infoMessage"><?php if (isset($message)){echo $message};?></div>
+<div id="infoMessage"><?php if (isset($message)){echo $message;}?></div>
 <body class="bg-dark">
   <div class="container">
     <div class="card card-register mx-auto mt-5">
