@@ -10,6 +10,7 @@ valid the inscription, then return to login where the user can login
 <div class="alert alert-danger">
 <?php echo validation_errors(); ?>
 </div>
+<div id="infoMessage"><?php echo $message;?></div>
 <body class="bg-dark">
   <div class="container">
     <div class="card card-register mx-auto mt-5">
