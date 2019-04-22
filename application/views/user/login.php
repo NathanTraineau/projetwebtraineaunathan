@@ -7,10 +7,10 @@
     }; ?>
 </div>
 <body class="bg-dark">
-    <h1 class="display-3">Bien Ouej pd 3</h1>
-    <blockquote class="blockquote">
-  <p class="mb-0">Toutes des putes</p>
-</blockquote>
+    <div class="alert alert-success" role="alert">
+ Bien ouejjjj, 
+ Là tu dois trouver comment rentrer sur ce site 
+</div>
   <div class="container">
     <div class="card card-login mx-auto mt-5">
       <div class="card-header">Login</div>
