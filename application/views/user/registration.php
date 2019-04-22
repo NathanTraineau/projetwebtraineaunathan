@@ -11,11 +11,12 @@ valid the inscription, then return to login where the user can login
     
 <?php echo validation_errors(); ?>
 </div>
-<div id="infoMessage"><?php if (isset($message)){echo $message;}?></div>
+
 <body class="bg-dark">
   <div class="container">
     <div class="card card-register mx-auto mt-5">
       <div class="card-header">Register an Account</div>
+        <div class="alert alert-danger" id="infoMessage"><?php if (isset($message)){echo $message;}?></div>
       <div class="card-body">
           <form method="post" accept-charset="utf-8" action="<?php echo site_url("user/confirmregistration")?>">
 
