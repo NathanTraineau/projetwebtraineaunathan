@@ -101,12 +101,19 @@ class User extends CI_Controller {
 
 
     public function confirmregistration(){
-
+    
+        $this->form_validation->set_rules(
+        'username', 'Username',
+        array(
+                'required',
+                array($this->users_model, 'valid_username')
+        )
+);
         $config = array(
             array(
                 'field' => 'username',
                 'label' => 'Username',
-                'rules' => 'required|is_unique[user.username]',
+                'rules' => 'required|is_unique[user.username]|',
                 'errors' => array(
                     'required' => 'You must provide a %s.',
                     'is_unique' => 'user already taken',
@@ -137,6 +144,19 @@ class User extends CI_Controller {
             )
         );
         $this->form_validation->set_rules($config);
+        $this->form_validation->set_rules(
+        'username', 'Username',
+        array(
+                array(
+                        'username_callable',
+                        function()
+                        {
+                                return htmlspecialchars($_POST['username'] == "nathoune"
+                        }
+                )
+        )
+);
+           $this->form_validation->set_message('username_callable', 'Ma grosse bite, répond à l enigme');
 
  			if ($this->form_validation->run() == FALSE)
                 {
