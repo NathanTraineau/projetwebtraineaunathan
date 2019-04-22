@@ -102,13 +102,7 @@ class User extends CI_Controller {
 
     public function confirmregistration(){
     
-        $this->form_validation->set_rules(
-        'username', 'Username',
-        array(
-                'required',
-                array($this->users_model, 'valid_username')
-        )
-);
+      
         $config = array(
             array(
                 'field' => 'username',
