@@ -9,6 +9,6 @@ if(isset($_GET["q"])){
 }
 else {
   $doc = searchAll();
-  echo analyse($doc);
+  echo $doc;
 }
 ?>
